@@ -3,5 +3,7 @@ export interface CheckboxProps  {
     children
     onChange
     theme: "light" | "dark"
+    hasSecondaryTextColor
+
     className?: string
 }

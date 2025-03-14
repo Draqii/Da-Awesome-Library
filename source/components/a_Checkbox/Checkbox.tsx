@@ -6,14 +6,14 @@ import Text from "../a_Text/Text";
 import Icon from "../a_Icon/Icon";
 import "./Checkbox.scss";
 
-const Checkbox = ({onChange, checked, children, theme, className}: CheckboxProps) => {
+const Checkbox = ({hasSecondaryTextColor, onChange, checked, children, theme, className}: CheckboxProps) => {
 
     const _onChange = (e) => {
         onChange(!checked)
     }
 
     return (
-        <div className={setClass("hw_checkbox", [theme], className)}>
+        <div className={setClass("hw_checkbox", [theme, hasSecondaryTextColor?"secondary":""], className)}>
             <div
                 onClick={_onChange}
                 className="hw_checkbox__input">

@@ -48,7 +48,7 @@
         .hw_checkbox__text {
             color: #454242;
         }
-        .hw_svg_fill {
+        .hw_svg__fill {
             fill: #454242;
         }
     }
@@ -59,9 +59,19 @@
         .hw_checkbox__text {
             color: white;
         }
-        .hw_svg_fill {
+        .hw_svg__fill {
             fill: white;
         };
+    }
+    &--light.hw_checkbox--secondary {
+        .hw_checkbox__text {
+            color: white;
+        }
+    }
+    &--dark.hw_checkbox--secondary {
+        .hw_checkbox__text {
+            color: #454242;
+        }
     }
 }
 

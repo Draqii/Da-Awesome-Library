@@ -29,6 +29,10 @@ const meta: Meta<typeof Checkbox> = {
       control: "boolean",
       description: "state of checkbox."
     },
+    hasSecondaryTextColor: {
+      control: "boolean",
+      description: "wether to use the secondary text color or not."
+    },
     theme: {
       control: "select",
       options: ["light", "dark"],
@@ -65,6 +69,26 @@ export const CommonLight: Story = {
 export const CommonDark: Story = {
   args: {
     theme: "dark"
+  },
+  parameters: {
+    backgrounds: {default: "dark"}
+  }
+};
+
+export const SecondaryLight: Story = {
+  args: {
+    theme: "light",
+    hasSecondaryTextColor: true
+  },
+  parameters: {
+    backgrounds: {default: "light"}
+  }
+};
+
+export const SecondaryDark: Story = {
+  args: {
+    theme: "dark",
+    hasSecondaryTextColor: true
   },
   parameters: {
     backgrounds: {default: "dark"}
