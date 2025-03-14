@@ -1,0 +1,23 @@
+image: node:latest
+
+stages:
+  - build
+
+check-job:
+  stage: build
+  script:
+    - echo "Install lftp"
+    - apt-get update
+    - apt-get install lftp
+    - echo "Check node and npm version"
+    - node -v
+    - npm -v
+    - echo "Build the repository"
+    - npm i
+    - npm ls
+    - npm rebuild node-sass
+    - npm ls
+    - npm run build
+    - echo "FTP Job lacks implementation ..."
+    - dir build
+    - lftp -e "set ssl:verify-certificate false; set ftp:ssl-allow no; open 162.241.169.22:21; user admin@hatchingwonders.com Creeper.13; mirror -X .* -X .*/ --reverse --verbose --delete build/ public_html/; bye"
