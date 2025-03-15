@@ -1,4 +1,5 @@
 import React from "react";
+import Text from "../a_Text/Text";
 import { setClass } from "../../modules/setClass";
 import { ButtonProps } from "./Button.types";
 import "./Button.scss";
@@ -12,7 +13,7 @@ const Button = ({isPrimary, children, onClick, theme, className}: ButtonProps) =
 
     return (
         <button onClick={onButtonClick} className={setClass("hw_button", [theme, isPrimary?"primary":""], className)}>
-            {children}
+            <Text size={"medium"} theme={theme}>{children}</Text>
         </button>
     )
 }

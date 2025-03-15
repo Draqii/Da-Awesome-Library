@@ -1,4 +1,9 @@
 .hw_table {
+    border-spacing: 10px 2px;
+    @media only screen and (min-width: 744px) {
+        border-spacing: 20px 4px;
+    }
+
     &__heading, &__field {
         font-family: "DynaPuff";
     }

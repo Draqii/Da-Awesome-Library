@@ -5,19 +5,8 @@
     appearance: none;
     text-align: center;
     border: 0px solid rgba(0, 0, 0, 0);
-    font-family: "DynaPuff";
-    font-size: 18px;
-    line-height: 25px;
     border-radius: 75px;
     width: 100%;
-    @media only screen and (min-width: 740px) { 
-        font-size: 20.5px;
-        line-height: 28px;
-    }
-    @media only screen and (min-width: 1440px) { 
-        font-size: 22px;
-        line-height: 32px;
-    }
     &:hover {
         transform: scale(1.05);
     }
@@ -41,12 +30,5 @@
     &--dark.hw_button--primary {
         background-color: orange;
         color: #454242;
-    }
-
-    @media only screen and (min-width: 744px) {
-        
-    }
-    @media only screen and (min-width: 1440px) {
-
     }
 }

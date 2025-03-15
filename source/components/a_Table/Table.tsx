@@ -11,7 +11,7 @@ const Table = ({data, theme, className}: TableProps) => {
             <thead className="hw_table__rows">
                 <tr className="hw_table__row">
                 {data.headings.map((heading, headingID) => 
-                <th className="hw_table__heading" key={"heading-"+headingID}><Text size="medium" theme={theme}>{heading}</Text></th>)}
+                <th className="hw_table__heading" key={"heading-"+headingID}><Text size="large" theme={theme}>{heading}</Text></th>)}
                 </tr>
             </thead>
             <tbody className="hw_table__rows">

@@ -13,7 +13,8 @@ const List = ({isOrdered, items, theme, className}: ListProps) => {
             <li 
                 key={item_id} 
                 className="hw_list__listpoint"
-                ><Text 
+                >
+                    <Text 
                     size={"medium"} 
                     theme={theme}
                     >{item}</Text>
@@ -24,7 +25,12 @@ const List = ({isOrdered, items, theme, className}: ListProps) => {
             <li 
                 key={item_id} 
                 className="hw_list__listpoint"
-                ><Text 
+                >
+                <Text 
+                    size={"medium"} 
+                    theme={theme}
+                    >{(item_id+1)}.</Text>
+                <Text 
                     size={"medium"} 
                     theme={theme}
                     >{item}</Text>

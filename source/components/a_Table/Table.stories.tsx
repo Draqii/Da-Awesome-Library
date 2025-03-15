@@ -17,7 +17,8 @@ const meta: Meta<typeof Table> = {
     data: {
       headings: ["heading A", "heading B", "heading C"],
       rows: [
-        {columns: ["entry A", "entry B", "entry C"]}
+        {columns: ["entry A 1", "entry B 1", "entry C 1"]},
+        {columns: ["entry A 2", "entry B 2", "entry C 2"]},
       ]
     },
   },
