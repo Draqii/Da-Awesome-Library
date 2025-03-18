@@ -3,5 +3,6 @@ export interface TextboxProps  {
     onChange
     placeholder
     theme: "light" | "dark"
+    isPassword?
     className?: string
 }
