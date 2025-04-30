@@ -31,4 +31,10 @@
         background-color: orange;
         color: #454242;
     }
+    &--disabled {
+        cursor: default;
+        &:hover, &:active {
+            transform: scale(1.0);
+        }
+    }
 }
