@@ -9,6 +9,7 @@ import Paragraph from "./components/a_Paragraph/Paragraph";
 import Table from "./components/a_Table/Table";
 import Text from "./components/a_Text/Text";
 import Textbox from "./components/a_Textbox/Textbox";
+import DropDown from "./components/a_DropDown/DropDown";
 
 export { Button }
 export { Checkbox }
@@ -21,3 +22,4 @@ export { Paragraph }
 export { Table }
 export { Text }
 export { Textbox }
+export { DropDown }
