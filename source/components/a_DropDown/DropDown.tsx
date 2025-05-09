@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { setClass } from "../../modules/setClass";
 import { DropDownProps } from "./DropDown.types";
 import texts from "./DropDown.json"
+import Paragraph from "../a_Paragraph/Paragraph";
+import Text from "../a_Text/Text";
 import "./DropDown.scss";
-import { Paragraph, Text } from "da-awesome-library/build";
 
 const DropDown = ({onChange, value, label, options, language, theme, className}: DropDownProps) => {
 
@@ -30,7 +31,6 @@ const DropDown = ({onChange, value, label, options, language, theme, className}:
             <Text className="hw_dropdown__label" size={"medium"} children={label} theme={"light"} />
             <div className="hw_dropdown__options">
                 <Paragraph className={"hw_dropdown__option hw_dropdown__option--active"} size={"medium"} children={sortOptions().ticked} onClick={() => setExpanded(!expanded)} theme={"light"} />
-                
                 {!expanded ? null : sortOptions().unticked.map((_option, option_id) => 
                 <Paragraph className={"hw_dropdown__option"} size={"medium"} children={_option} onClick={() => setOption(_option)} theme={"light"} />
                 )}
