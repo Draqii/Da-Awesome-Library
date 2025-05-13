@@ -1,0 +1,45 @@
+.hw_radio {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    &__option {
+        transition: transform 0.2s;
+        cursor: pointer;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        &:hover {
+            transform: scale(1.05);
+        }
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+    &__circle {
+        width: 35px;
+        height: 35px;
+        border-radius: 35px;
+        background-color: white;
+        box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.4);
+    }
+    &__option--active {
+        .hw_radio__circle::before {
+            display: block;
+            position: relative;
+            content: "";
+            width: 12px;
+            height: 12px;
+            border-radius: 20px;
+            top: 12px;
+            left: 12px;
+            background-color: #242424;
+        }
+    }
+    &--dark {
+        &__circle {
+            background-color: #242424;
+        }
+    }
+}
+

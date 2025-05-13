@@ -10,6 +10,8 @@ import Table from "./components/a_Table/Table";
 import Text from "./components/a_Text/Text";
 import Textbox from "./components/a_Textbox/Textbox";
 import DropDown from "./components/a_DropDown/DropDown";
+import Switch from "./components/Switch/Switch";
+import Radio from "./components/Radio/Radio";
 
 export { Button }
 export { Checkbox }
@@ -23,3 +25,5 @@ export { Table }
 export { Text }
 export { Textbox }
 export { DropDown }
+export { Switch }
+export { Radio }
