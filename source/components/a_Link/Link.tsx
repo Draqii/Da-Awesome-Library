@@ -5,22 +5,21 @@ import { Link as ReactLink } from "react-router-dom";
 import Text from "../a_Text/Text";
 import "./Link.scss";
 
-const Link = ({target, children, isInternal, to, theme, className}: LinkProps) => {
+const Link = ({filename, copyLink, target, children, isInternal, to, theme, className}: LinkProps) => {
 
-    const scrollToTop = () => {
-        window.scrollTo({
-            behavior: "smooth",
-            left: 0,
-            top: 0
-        })
-    }
+    const handleClick = (e) => {
+        if (!copyLink || filename) return
+        e.preventDefault();
+        navigator.clipboard.writeText(copyLink);
+    };
 
     return (
         isInternal ? 
         <ReactLink 
-            onClick={() => scrollToTop()}
+            onClick={(e) => handleClick(e)}
             target={!target ? "_self" : target}
             className={setClass("hw_link", [theme], className)} 
+            download={filename}
             to={to}>
             <Text 
             theme={theme}
@@ -28,8 +27,10 @@ const Link = ({target, children, isInternal, to, theme, className}: LinkProps) =
             >{children}</Text>
         </ReactLink> :
         <a 
+            onClick={(e) => handleClick(e)}
             target={!target ? "_self" : target}
             className={setClass("hw_link", [theme], className)} 
+            download={filename}
             href={to}>
             <Text 
             theme={theme}
