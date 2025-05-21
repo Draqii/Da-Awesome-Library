@@ -29,6 +29,7 @@ const Link = ({target, children, isInternal, to, theme, className}: LinkProps) =
         </ReactLink> :
         <a 
             target={!target ? "_self" : target}
+            className={setClass("hw_link", [theme], className)} 
             href={to}>
             <Text 
             theme={theme}
