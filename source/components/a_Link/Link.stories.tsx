@@ -40,6 +40,11 @@ const meta: Meta<typeof Link> = {
       options: ["light", "dark"],
       description: "wether link is light or dark."
     },
+    target: {
+      control: "select",
+      options: ["light", "dark"],
+      description: "wether link is light or dark."
+    },
     className: {
       control: false,
       description: "optional classname to append."

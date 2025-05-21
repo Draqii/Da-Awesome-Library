@@ -5,7 +5,7 @@ import { Link as ReactLink } from "react-router-dom";
 import Text from "../a_Text/Text";
 import "./Link.scss";
 
-const Link = ({children, isInternal, to, theme, className}: LinkProps) => {
+const Link = ({target, children, isInternal, to, theme, className}: LinkProps) => {
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -19,6 +19,7 @@ const Link = ({children, isInternal, to, theme, className}: LinkProps) => {
         isInternal ? 
         <ReactLink 
             onClick={() => scrollToTop()}
+            target={!target ? "_self" : target}
             className={setClass("hw_link", [theme], className)} 
             to={to}>
             <Text 
@@ -26,7 +27,9 @@ const Link = ({children, isInternal, to, theme, className}: LinkProps) => {
             size={"small"}
             >{children}</Text>
         </ReactLink> :
-        <a href={to}>
+        <a 
+            target={!target ? "_self" : target}
+            href={to}>
             <Text 
             theme={theme}
             size={"small"}
