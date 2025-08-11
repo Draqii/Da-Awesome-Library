@@ -12,6 +12,7 @@ import Textbox from "./components/a_Textbox/Textbox";
 import DropDown from "./components/a_DropDown/DropDown";
 import Switch from "./components/Switch/Switch";
 import Radio from "./components/Radio/Radio";
+import Textarea from "./components/a_Textarea/Textarea";
 
 export { Button }
 export { Checkbox }
@@ -27,3 +28,4 @@ export { Textbox }
 export { DropDown }
 export { Switch }
 export { Radio }
+export { Textarea }
