@@ -10,8 +10,8 @@ import Table from "./components/a_Table/Table";
 import Text from "./components/a_Text/Text";
 import Textbox from "./components/a_Textbox/Textbox";
 import DropDown from "./components/a_DropDown/DropDown";
-import Switch from "./components/Switch/Switch";
-import Radio from "./components/Radio/Radio";
+import Switch from "./components/a_Switch/Switch";
+import Radio from "./components/a_Radio/Radio";
 import Textarea from "./components/a_Textarea/Textarea";
 import Numberbox from "./components/a_Numberbox/Numberbox";
 

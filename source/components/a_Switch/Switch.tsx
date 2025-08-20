@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { setClass } from "../../modules/setClass";
 import { SwitchProps } from "./Switch.types";
-import texts from "./Switch.json"
 import "./Switch.scss";
 import Text from "../a_Text/Text";
 

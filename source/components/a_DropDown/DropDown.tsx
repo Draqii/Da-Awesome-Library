@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { setClass } from "../../modules/setClass";
 import { DropDownProps } from "./DropDown.types";
-import texts from "./DropDown.json"
 import Paragraph from "../a_Paragraph/Paragraph";
 import Text from "../a_Text/Text";
 import "./DropDown.scss";
