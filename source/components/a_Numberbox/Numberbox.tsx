@@ -36,7 +36,7 @@ const Numberbox = ({min, max, value, onChange, placeholder, theme, className}: N
                     theme={theme === "light" ? "dark" : "light"} 
                     ReactSVG={Icon_edit} />
                 <input 
-                    className="hw_numberbox__input" 
+                    className="hw_numberbox__input hw_text" 
                     onChange={_onChange}
                     value={value}
                     placeholder={placeholder}
