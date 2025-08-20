@@ -3,12 +3,12 @@
     flex-direction: row;
     gap: 12px;
     &__option {
-        transition: transform 0.2s;
         cursor: pointer;
         align-items: center;
         display: flex;
         flex-direction: row;
         gap: 6px;
+        transition: transform 0.2s;
         &:hover {
             transform: scale(1.05);
         }
